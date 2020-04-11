@@ -1,0 +1,21 @@
+pipeline:
+    go:
+      image: golang
+      commands:
+        - go test
+    node:
+      image: node:13
+      commands:
+        - npm install -g mocha
+        - npm install
+        - npm test
+    # slack:
+    #     image: plugins/slack
+    #     webhook: {申請到的 Slack Webhook URL}
+    #     channel: docker
+    #     template: >
+    #       {{#success build.status}}
+    #         build {{build.number}} succeeded. Good job.
+    #       {{else}}
+    #         build {{build.number}} failed. Fix me please.
+    #       {{/success}}
