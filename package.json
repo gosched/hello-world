@@ -1,0 +1,20 @@
+{
+  "name": "hello-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "hello_world.js",
+  "scripts": {
+    "start": "node hello_world.js",
+    "test": "mocha hello_world_test.js --exit"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "expect": "^25.3.0",
+    "express": "^4.17.1",
+    "mocha": "^7.1.1",
+    "supertest": "^4.0.2"
+  }
+}
